@@ -25,6 +25,7 @@
 
 ## 📷 Jika Terkoneksi dengan Dashboard Streamlit
 
+![Dashbord Streamlit](https://github.com/TrafficSync/Car-Tracking-Prototype/blob/109934ccead19305e1b07a87a896df7f9c1948c3/%7BC971D8B5-9DF0-45EF-9536-50EC471F4F37%7D.png)
 
 ---
 
