@@ -49,11 +49,6 @@
 
 ---
 
-## 📁 Struktur Proyek
-
-
----
-
 ## 🧠 Kegunaan Proyek Ini
 
 - 🚦 **Simulasi sistem monitoring lalu lintas** berbasis AI
@@ -71,39 +66,21 @@
 
 ---
 
-## 👨‍💻 Kontributor
+## 🖥️ Cara Menjalankan Proyek Ini
 
-> 🎓 Proyek ini dikembangkan untuk eksplorasi AI & Computer Vision  
-> 🔧 Developer: **Darrell Dzaky Ahnaf**  
-> 💡 Framework: YOLOv8 + OpenCV + Python
+### 1. Persyaratan Sistem
 
----
+- Python ≥ 3.8
+- pip
+- `ultralytics` dan `opencv-python`
 
-## 📜 Lisensi
+### 2. Instalasi Library
 
-Proyek ini menggunakan lisensi bebas untuk eksplorasi akademik dan non-komersial.  
-Untuk penggunaan komersial, silakan ajukan permohonan terlebih dahulu.
+`pip install ultralytics opencv-python`
 
+## 3. Cara jalankan Script
 
-
-
-
----
-
-## 🧠 Kegunaan Proyek Ini
-
-- 🚦 **Simulasi sistem monitoring lalu lintas** berbasis AI
-- 🧪 **Validasi analitik kendaraan** di jalur/jurusan berbeda
-- 📉 **Pengumpulan data kendaraan** untuk studi kepadatan/arus lalu lintas
-- 🏙️ Potensi integrasi ke **Smart City** & sistem **manajemen lampu lalu lintas cerdas**
-
----
-
-## ✅ Hasil yang Diperoleh
-
-- Hitung kendaraan berdasarkan **area yang ditentukan**
-- Tampilkan hasil langsung secara visual
-- Dapat disesuaikan ke arah kiri/kanan, atas/bawah, atau bahkan zona tertentu
+`python detect_video.py`
 
 ---
 
