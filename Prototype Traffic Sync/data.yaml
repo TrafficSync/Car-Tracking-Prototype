@@ -1,0 +1,15 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['cars', 'truck']
+
+roboflow:
+  workspace: just-try-aweeb
+  project: vehiclecount-14hyl
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/just-try-aweeb/vehiclecount-14hyl/dataset/1
+
+  
