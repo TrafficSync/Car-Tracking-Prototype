@@ -84,6 +84,42 @@
 Proyek ini menggunakan lisensi bebas untuk eksplorasi akademik dan non-komersial.  
 Untuk penggunaan komersial, silakan ajukan permohonan terlebih dahulu.
 
+
+
+
+
+---
+
+## 🧠 Kegunaan Proyek Ini
+
+- 🚦 **Simulasi sistem monitoring lalu lintas** berbasis AI
+- 🧪 **Validasi analitik kendaraan** di jalur/jurusan berbeda
+- 📉 **Pengumpulan data kendaraan** untuk studi kepadatan/arus lalu lintas
+- 🏙️ Potensi integrasi ke **Smart City** & sistem **manajemen lampu lalu lintas cerdas**
+
+---
+
+## ✅ Hasil yang Diperoleh
+
+- Hitung kendaraan berdasarkan **area yang ditentukan**
+- Tampilkan hasil langsung secara visual
+- Dapat disesuaikan ke arah kiri/kanan, atas/bawah, atau bahkan zona tertentu
+
+---
+
+## 👨‍💻 Kontributor
+
+> 🎓 Proyek ini dikembangkan untuk eksplorasi AI & Computer Vision  
+> 🔧 Developer: **Darrell Dzaky Ahnaf**  
+> 💡 Framework: YOLOv8 + OpenCV + Python
+
+---
+
+## 📜 Lisensi
+
+Proyek ini menggunakan lisensi bebas untuk eksplorasi akademik dan non-komersial.  
+Untuk penggunaan komersial, silakan ajukan permohonan terlebih dahulu.
+
 ---
 
 
