@@ -82,6 +82,18 @@
 
 `python detect_video.py`
 
+## 4. Cara jalankan Dashboard Streamlit
+
+
+#### Buka terminal lain lalu :
+
+
+`pip install streamlit`
+
+`streamlit run dashboard.py`
+
+Masukkan Email, lalu dapat menjalankan dashboard data secara real time
+
 ---
 
 ## 👨‍💻 Kontributor

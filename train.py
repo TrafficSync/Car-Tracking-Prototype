@@ -5,7 +5,7 @@ model = YOLO('yolov8n.pt')  # Ganti dengan 'yolov8s.pt' atau lainnya untuk model
 
 # Latih modelmodel.val(data='path/to/data.yaml')
 model.train(
-    data='D:\!Hackahton\VehicleCount.v1i.yolov8\data.yaml',  # Path ke file data.yaml
+    data='D:\!Hackahton\VehicleCount.v1\data.yaml',  # Path ke file data.yaml
     epochs=50,                 # Jumlah iterasi pelatihan
     imgsz=640,                 # Ukuran gambar (640x640 piksel)
     batch=16,                  # Jumlah gambar per batch
