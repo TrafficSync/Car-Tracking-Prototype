@@ -1,9 +1,10 @@
 from ultralytics import YOLO
 import cv2
+import json  # Untuk simpan count ke file
 
 # Load model dan video
-model = YOLO('best.pt')
-video_path = 'wasd.mp4'
+model = YOLO('best.pt')  # Ganti dengan path model kamu
+video_path = 'wasd.mp4'  # Ganti dengan path video kamu
 cap = cv2.VideoCapture(video_path)
 
 # Inisialisasi counter
@@ -53,12 +54,12 @@ while cap.isOpened():
             x1, y1, x2, y2 = map(int, box.xyxy[0])
             cx, cy = (x1 + x2) // 2, (y1 + y2) // 2
 
-            if cls_id == 0:  # Class 'cars'
+            if cls_id == 0:  # Hanya hitung class 'cars'
                 # Gambar bounding box dan titik merah
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
                 cv2.circle(frame, (cx, cy), 3, (0, 0, 255), -1)
 
-                # Simple tracking ID
+                # Tracking ID sederhana
                 matched_id = None
                 for pid, (pcx, pcy) in prev_centers.items():
                     if abs(cx - pcx) < 50 and abs(cy - pcy) < 50:
@@ -71,7 +72,7 @@ while cap.isOpened():
 
                 new_centers[matched_id] = (cx, cy)
 
-                # Hitung sentuhan garis kiri (0.78)
+                # Hitung sentuhan garis kiri
                 if (abs(cy - line_y_left) <= line_touch_tolerance and
                     line_x1 <= cx <= line_x2 and
                     matched_id not in prev_ids_left):
@@ -79,7 +80,7 @@ while cap.isOpened():
                     prev_ids_left.add(matched_id)
                     print(f"[LEFT] ID {matched_id} → Left Count: {left_count}")
 
-                # Hitung sentuhan garis kanan (0.6)
+                # Hitung sentuhan garis kanan
                 if (abs(cy - line_y_right) <= line_touch_tolerance and
                     line_x3 <= cx <= line_x4 and
                     matched_id not in prev_ids_right):
@@ -88,6 +89,13 @@ while cap.isOpened():
                     print(f"[RIGHT] ID {matched_id} → Right Count: {right_count}")
 
     prev_centers = new_centers
+
+    # Simpan count ke file JSON agar bisa dibaca oleh Streamlit
+    with open("count_data.json", "w") as f:
+        json.dump({
+            "left": left_count,
+            "right": right_count
+        }, f)
 
     # Tampilkan counter di kiri atas
     cv2.putText(frame, f'Left Count : {left_count}', (20, 40),
@@ -101,5 +109,6 @@ while cap.isOpened():
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
+# Cleanup
 cap.release()
 cv2.destroyAllWindows()
