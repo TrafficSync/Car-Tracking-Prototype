@@ -20,10 +20,10 @@
 
 ## 📷 Contoh Hasil
 
-![TrafficSync Detection Sample](assets/screenshot.png)  
+![TrafficSync Detection Sample](https://github.com/TrafficSync/Car-Tracking-Prototype/blob/599bff552a813dcc4645921df5ea6014abca01b2/Prototype%20Traffic%20Sync/ss/%7BF62C9B00-FA8F-4B54-9436-6108368C988E%7D.png) 
 *Gambar: Deteksi mobil menyentuh garis hijau (kiri) dan garis merah (kanan), counter ditampilkan di pojok kiri atas.*
 
-> 📎 *Kamu bisa ganti link gambar dengan path screenshot kamu setelah upload, misalnya `assets/output.png`.*
+
 
 ---
 
